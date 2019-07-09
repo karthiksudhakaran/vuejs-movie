@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+    <title>MovieInfo</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">MovieInfo</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="movie" class="well"></div>
+    </div>
+<body>
+<br>
+<form id="form1" align = "center">
+Movie Name: <input name="MovieName" type="text" size="20" required><br><br><br>
+Date of Release:<input name="DOR" type="date" required><br><br><br>
+Movie url <input name="image" type="url" required><br>
+</form>
+<br><center><button onclick="outputname()">Submit</button>
+<script>
+
+function outputname() {
+var x,y,name,a,b,answer;
+x=document.getElementById("form1");
+y=x.elements["MovieName"].value;
+var z = x.elements["DOR"].value;
+var k = x.elements["url"].value;
+document.getElementById("demo").innerHTML= y <br>;
+document.getElementById("demo").innerHTML= z <br>;
+document.getElementById("demo").innerHTML= k <br>;
+
+}
+
+</script>
+
+
+<p id="demo"></p>
+</body>
+</html>
